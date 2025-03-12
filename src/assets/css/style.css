@@ -1,0 +1,536 @@
+/*Fontes*/
+@font-face {
+    font-family: 'Circular--Std--Black';
+    src: url(../fonts/CircularStd-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Circular--Std--Bold';
+    src: url(../fonts/CircularStd-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Circular--Std--Book';
+    src: url(../fonts/CircularStd-Book.ttf);
+}
+
+@font-face {
+    font-family: 'Circular--Std--Medium';
+    src: url(../fonts/CircularStd-Medium.ttf);
+}
+
+/*Zerando a conf do navegador*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Incio da estrutura do container*/
+.pagina {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.top--40 {
+    margin-top: 40px;
+}
+
+/*Classes cores e fontes*/
+.texto--cinza {
+    color: #B3B3B3;
+}
+
+.texto--branco {
+    color: #FFFFFF;
+}
+
+.fundo--preto {
+    background-color: #000000;
+}
+
+.componente--see--all {
+    color: #ADADAD;
+    font-size: 16px;
+    font-family: 'Circular--Std--Bold';
+}
+
+.icon--menu {
+    width: 32px;
+    height: 32px;
+}
+
+.componente--item--menu {
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Circular--Std--Bold';
+    
+}
+
+.componente--item--secundario-menu {
+    font-size: 18px;
+    font-family: 'Circular--Std--Book';
+}
+
+.fundo--degrade {
+    background: linear-gradient(180deg,  #3333A3 0%, #3333A3 10%, #121212 25%);
+}
+
+.flex--direction--column {
+    flex-direction: column;
+}
+
+.flex--direction--row {
+    flex-direction: row;
+}
+
+.div--flex {
+    display: flex;
+}
+
+.justify--content--end {
+    justify-content: flex-end;
+}
+
+.justify--content--center {
+    justify-content: center;
+}
+
+.justify--content--start {
+    justify-content: flex-start;
+}
+
+.justify--content--space-evenly {
+    justify-content: space-evenly;
+}
+
+.border {
+    border: 1px solid white;
+}
+.border--blue {
+    border: 1px solid white;
+}
+
+.flex--1 {
+    flex: 1;
+}
+
+.flex--2 {
+    flex: 2;
+}
+
+
+.flex--3 {
+    flex: 3;
+}
+
+.flex--4 {
+    flex: 4;
+}
+
+.align--items--center {
+    align-items: center;
+ }
+
+.align--items--end {
+    align-items: flex-end;
+    height: 100%;
+}
+
+
+.texto--categoria {
+    font-family: 'Circular--Std--Bold';
+    font-size: 30px;
+}
+
+
+
+/* Inicio lado esquerdo */
+.parte--esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 80px;
+    flex: 1;
+  
+}
+
+.padding--parte--esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.conjunto--item--menu {
+    display: flex;
+    height: 32px;
+    gap: 20px;
+}
+
+.separator {
+    height: 0.5px;
+    background: #282828;
+    width: 100%;
+}
+
+
+.componente--item--menu--esquerda {
+    width: 141px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 25.3px;
+    letter-spacing: 1%;
+    font-family: 'Circular--Std--Bold';
+
+}
+
+/* Inicio css meio */
+
+.parte--meio {
+    flex: 3.5;
+    padding: 0 40px;
+    
+}
+
+.topo {
+    height: 80px;
+}
+
+.icone--topo {
+    width: 40px;
+    height: 40px;
+}
+
+/* inicio do css lado direita */
+
+.parte--direita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 29px;
+    flex: 1;
+   
+}
+
+.top--direita {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.icones--direita {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.invite {
+    width: 32px;
+    height: 32px;
+    margin-top: 26px;
+    margin-left: 100px;
+   
+}
+
+.close {
+    width: 56px;
+    height: 56px;
+    margin-top: 14px;
+
+}
+
+.texto--1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+
+    font-weight: 450px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    
+}
+
+.texto--2 {
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    font-weight: 450px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    
+}
+
+.amigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    gap: 15px;
+    height: 250px;  
+}
+
+.amigos img{
+    width: 179px;
+    height: 62px;
+
+}
+
+.parte--direita button {
+    width: 233px;
+    height: 62px;
+    margin-left: 56px;
+    border-radius: 40px;
+    border: 0;
+    background: #FFFFFF;
+    margin-top: 50px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.77px;
+    letter-spacing: 2px;
+    align-items: center;
+    color: #171717;
+    text-transform: uppercase;
+    font-family: 'Circular--Std--Bold'; 
+}
+
+
+.div--icones--topo {
+    gap: 20px;
+}
+
+.botao--perfil {
+    width: 189px;
+    background-color: #000000;
+    border-radius: 40px;
+    height: 40px;
+}
+
+.foto--perfil {
+    width: 34px;
+    height: 34px;
+}
+
+.div--foto--perfil {
+    padding: 3px 3px;
+}
+
+.nome--perfil {
+    font-family:'Circular--Std--Bold';
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* Titulo meio */
+
+.titulo--meio {
+    font-family: "Circular--Std--Bold";
+    font-size: 39px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.div--estilos--musicais {
+    background: linear-gradient(
+        to right, 
+        rgba(72, 72, 119, 0.3), 
+        rgba(92, 95, 142, 0.3), 
+        rgba(92, 95, 142, 0.3), 
+        rgba(92, 95, 142, 0.3), 
+        rgba(92, 95, 142, 0.3)
+    );
+    border-radius: 6px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.lista--estilos--musicais {
+    height: 88px;
+    color: #FFFFFF;
+    gap: 30px;
+}
+
+.imagem--estilo--musical {
+    width: 75px;
+    height: 75px;
+}
+
+.nome--estilos--musicais {
+    font-family: "Circular--Std--Bold";
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.titulo--bloco--personalizado {
+    font-size: 30px;
+    font-family: 'Circular--Std--Bold';
+    color: #FFFFFF;
+}
+
+.div--blocos--personalizados {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.texto--see--all {
+    font-size: 16px;
+    font-family: 'Circular--Std--Bold';
+}
+
+.bloco--opcao--personalizada {
+    width: 224px;
+    height: 324px;
+    background-color: #1B1B1B;
+}
+
+.lista--estilos--personalizados {
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.foto--estilo--personalizado {
+    width: 182px;
+    height: 182px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.descricao--estilo--personalizado {
+    font-family: 'Circular--Std--Bold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color:rgba(255, 255, 255, 1);
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+.descricao--estilo--rodape {
+    color: #FFFFFF;
+    margin-left: 28px;
+    color: rgba(179, 179, 179, 1);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: 'Circular--Std--Book';
+    
+}
+
+.margin--top {
+    margin-top: 40px;
+}
+
+.div--foto--musica--atual {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.foto--musica--atual {
+    width: 310px;
+    padding: 3px;
+}
+
+.container--player {
+    height: 112px;
+    background-color: #1B1B1B;
+}
+
+.nome--musica {
+    font-family: "Circular--Std--Book";
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.nome--autor {
+    font-family: "Circular--Std--Book";
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+.favoritos {
+    width: 28px;
+    height: 28px;
+    padding-top: 44px;
+}
+
+.icon--player {
+    width: 32px;
+    height: 32px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.div--icon--player {
+    gap: 20px;
+}
+
+.icon--player--pause {
+    width: 48px;
+    height: 48px;
+    padding-top: 15px;
+    cursor: pointer;
+
+}
+
+.music--status {
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, white 50%, #A6A6A6 50%);
+    flex: 10;
+}
+
+.time--music {
+    font-family: "Circular--Std--Book";
+    font-size: 16px;
+    color: #A6A6A6;
+
+}
+
+.div--progresso {
+    gap: 5px;
+}
+
+.icon--player--right {
+    width: 100%;
+}
+
+.icon--player--status{
+    width: 119px;
+    padding-top: 18px;
+}
+
+.icons--footer {
+    padding-right: 20px;
+    gap: 10px;
+}
